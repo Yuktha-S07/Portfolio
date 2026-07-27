@@ -13,7 +13,7 @@ export function Skills() {
           className="mb-12"
         />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {skillCategories.map((category) => (
             <SkillCard key={category.category} category={category} />
           ))}

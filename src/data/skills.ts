@@ -14,21 +14,13 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    category: "Backend Knowledge",
+    category: "Backend",
     skills: [
-      { name: "Firebase Auth", icon: "Firebase" },
-      { name: "Firestore", icon: "Firestore" },
-      { name: "REST APIs", icon: "REST APIs" },
-      { name: "CRUD Operations", icon: "CRUD Operations" },
-    ],
-  },
-  {
-    category: "UI/UX",
-    skills: [
-      { name: "Figma", icon: "Figma" },
-      { name: "Responsive Design", icon: "Responsive Design" },
-      { name: "Wireframing", icon: "Wireframing" },
-      { name: "Prototyping", icon: "Prototyping" },
+      { name: "Node.js", icon: "Node.js" },
+      { name: "Express.js", icon: "Express.js" },
+      { name: "MongoDB", icon: "MongoDB" },
+      { name: "Firebase", icon: "Firebase" },
+      { name: "Rest APIs", icon: "Rest APIs" },
     ],
   },
   {
@@ -38,6 +30,7 @@ export const skillCategories: SkillCategory[] = [
       { name: "GitHub", icon: "GitHub" },
       { name: "VS Code", icon: "VS Code" },
       { name: "Vercel", icon: "Vercel" },
+      { name: "Render", icon: "Render" },
     ],
   },
 ]

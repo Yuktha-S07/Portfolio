@@ -33,6 +33,7 @@ export interface ExperienceItem {
   role: string
   company: string
   period: string
+  duration?: string
   description: string
   isPlaceholder?: boolean
   joiningLetter?: string

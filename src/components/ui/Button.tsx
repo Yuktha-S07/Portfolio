@@ -32,7 +32,7 @@ export function Button<T extends ElementType = "button">({
 
   const variants = {
     primary:
-      "bg-emerald-600 text-white hover:bg-emerald-700 active:bg-emerald-800 shadow-sm",
+      "bg-gradient-to-r from-emerald-600 to-teal-500 text-white hover:from-emerald-700 hover:to-teal-600 active:from-emerald-800 active:to-teal-700 shadow-sm",
     outline:
       "border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50 dark:border-emerald-500 dark:text-emerald-400 dark:hover:bg-emerald-950/30",
     ghost:

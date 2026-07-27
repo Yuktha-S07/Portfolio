@@ -1,7 +1,7 @@
 import { AnimatedSection } from "@/components/ui/AnimatedSection"
 import { SectionHeading } from "@/components/ui/SectionHeading"
 import { Card } from "@/components/ui/Card"
-import { GraduationCap } from "lucide-react"
+import { FileDown, GraduationCap, FileText } from "lucide-react"
 
 export function About() {
   return (
@@ -26,6 +26,15 @@ export function About() {
               TypeScript, and UI/UX while building projects that strengthen my
               development expertise.
             </p>
+            <a
+              href="/Resume.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative mt-6 inline-flex items-center gap-2 rounded-lg bg-emerald-100 px-7 py-3 text-base font-medium text-emerald-800 transition-all hover:bg-emerald-200 hover:text-emerald-900 dark:bg-emerald-950/40 dark:text-emerald-200 dark:hover:bg-emerald-950/60 dark:hover:text-emerald-100"
+            >
+              <FileText size={15} />
+              Resume
+            </a>
           </div>
 
           <div className="w-full max-w-sm lg:shrink-0">

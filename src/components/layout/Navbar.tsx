@@ -61,12 +61,12 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-all duration-300",
         scrolled
-          ? "border-b border-neutral-200/60 bg-white/80 backdrop-blur-lg dark:border-neutral-800/60 dark:bg-neutral-950/80"
+          ? "border-b border-neutral-200/60 bg-white/80 backdrop-blur-xl dark:border-neutral-800/60 dark:bg-neutral-950/80"
           : "bg-transparent",
       )}
     >
       <nav
-        className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8"
+        className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8"
         aria-label="Main navigation"
       >
         <a
@@ -77,7 +77,7 @@ export function Navbar() {
           }}
           className="text-lg font-bold tracking-tight text-neutral-900 dark:text-white"
         >
-          Portfolio
+          <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent dark:from-emerald-400 dark:to-teal-400">Portfolio</span>
         </a>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -90,9 +90,9 @@ export function Navbar() {
                 handleClick(href)
               }}
               className={cn(
-                "rounded-lg px-3 py-2 text-sm font-medium transition-colors",
+                "rounded-lg px-3 py-2 text-sm font-medium transition-all duration-200",
                 activeSection === href.replace("#", "")
-                  ? "text-emerald-600 dark:text-emerald-400"
+                  ? "bg-emerald-50 text-emerald-600 dark:bg-emerald-950/30 dark:text-emerald-400"
                   : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800",
               )}
               aria-current={
@@ -121,7 +121,7 @@ export function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="border-t border-neutral-200/60 bg-white px-4 pb-4 pt-2 dark:border-neutral-800/60 dark:bg-neutral-950 md:hidden">
+        <div className="border-t border-neutral-200/60 bg-white/95 backdrop-blur-xl px-4 pb-5 pt-3 dark:border-neutral-800/60 dark:bg-neutral-950/95 md:hidden">
           {navLinks.map(({ href, label }) => (
             <a
               key={href}
@@ -131,9 +131,9 @@ export function Navbar() {
                 handleClick(href)
               }}
               className={cn(
-                "block rounded-lg px-3 py-2.5 text-sm font-medium transition-colors",
+                "block rounded-lg px-3 py-3 text-sm font-medium transition-colors",
                 activeSection === href.replace("#", "")
-                  ? "text-emerald-600 dark:text-emerald-400"
+                  ? "bg-emerald-50 text-emerald-600 dark:bg-emerald-950/30 dark:text-emerald-400"
                   : "text-neutral-600 hover:bg-neutral-100 dark:text-neutral-400 dark:hover:bg-neutral-800",
               )}
             >

@@ -35,17 +35,19 @@ export function TimelineItem({ item, isLast }: TimelineItemProps) {
             </p>
           </div>
         </div>
-        <p className="text-sm text-neutral-500 dark:text-neutral-500">
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
           {item.period}
         </p>
+        {item.duration && (
+          <p className="mt-1 text-xs text-neutral-400 dark:text-neutral-500">
+            {item.duration}
+          </p>
+        )}
         <p className="mt-3 text-base leading-relaxed text-neutral-600 dark:text-neutral-400">
           {item.description}
         </p>
         {item.joiningLetter && (
           <div className="mt-6">
-            <p className="mb-3 text-sm text-neutral-500 dark:text-neutral-400">
-              Attached Joining Letter
-            </p>
             <a
               href={item.joiningLetter}
               target="_blank"
